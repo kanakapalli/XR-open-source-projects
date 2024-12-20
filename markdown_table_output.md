@@ -1,37 +1,3 @@
-# XR Development Toolkit Collection
-
-Welcome to the **XR Development Toolkit Collection** repository! 🎮✨
-
-This repository is a comprehensive collection of XR (Extended Reality) project repositories. It showcases the endless possibilities developers have when building immersive experiences using platforms like **Meta**, **XR Interaction Toolkit**, and more. Whether you're a beginner or an experienced XR developer, this collection aims to inspire and provide valuable resources to kickstart your XR journey.
-
-
----
-
-## Table of Contents
-
-1. [About the Collection](#about-the-collection)
-2. [Projects Showcase](#projects-showcase)
-3. [Contributing](#contributing)
-4. [License](#license)
-
----
-
-## About the Collection
-
-This repository aims to:
-
-- Highlight the **potential of XR technologies** in creating immersive, interactive experiences.
-- Provide a **curated list of XR projects** leveraging popular platforms and toolkits like Meta, Unity's XR Interaction Toolkit, and AR.js.
-- Serve as a **learning resource** for developers looking to explore XR development.
-
-Whether you're building VR simulations, AR-enhanced applications, or MR experiences, this repository has you covered!
-
----
-
-## Projects Showcase
-
-Here’s a table summarizing the projects available in this repository:
-
 | Project Name                                                 | Short Description                                                                                                                                                                                        | Project URL                                                                         | Try it Out Links                                                                                                                                                                                                                                                                   |
 |:-------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 'Room Wars' - Castle Defense                                 | An MR game where you defend a castle against attacks that burst through your walls & ceiling. It becomes totally carnage as your room is destroyed and is completely wrecked in the battle!              | https://devpost.com/software/room-wars-home-defense                                 | https://www.gamedigits.co.uk/vr/RoomWars.apk                                                                                                                                                                                                                                       |
@@ -198,24 +164,3 @@ Here’s a table summarizing the projects available in this repository:
 | VR Air Awareness Training Simulator                          | A VR app that allows the user to experience a simulated flip. The user will be become accustomed to the timing and sensation of turning in the air, training their air awareness.                        | https://devpost.com/software/vr-air-awareness-training-simulator                    | https://github.com/QuinnAho/Hackython                                                                                                                                                                                                                                              |
 | Cavity Crusher                                               | Educational platform for training dentists & hygienists.                                                                                                                                                 | https://devpost.com/software/cavity-crusher                                         | https://github.com/Granto1/XRMidwest                                                                                                                                                                                                                                               |
 | AR Capture the Flag                                          | Bring an immersive, interactive, and socially engaging experience through a classic outdoor game – Capture the Flag – into augmented reality (AR).                                                       | https://devpost.com/software/ar-capture-the-flag                                    | https://github.com/totech711/flagAR                                                                                                                                                                                                                                                |
----
-
-## Contributing
-
-We welcome contributions from the community! 🎉 If you have an XR project that you'd like to showcase, please follow these steps:
-
-1. **Fork the repository.**
-2. Add your project details to the `README.md` file in the format of the table above.
-3. Submit a pull request with a short description of your project.
-
-Alternatively, feel free to add your projects to the table by leaving a comment on this repository. We'll review and include them in the showcase if they align with the repository’s goals.
-
----
-
-## License
-
-This repository is licensed under the MIT License. Feel free to use the resources and contribute to the XR developer community.
-
----
-
-> "The future is immersive. Let's build it together." 🌍
