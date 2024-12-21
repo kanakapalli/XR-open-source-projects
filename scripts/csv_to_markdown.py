@@ -17,7 +17,13 @@ desired_order = ['project_name', 'try_it_out_links', 'short_description', 'proje
 df = df[desired_order]
 
 # Format links in markdown style
-df['try_it_out_links'] = df['try_it_out_links'].apply(lambda x: f"[Link]({x})")
+def format_multiple_links(links):
+    """Convert multiple links separated by commas into Markdown format."""
+    link_list = links.split(',')  # Split links by comma
+    markdown_links = [f"[Link]({link.strip()})" for link in link_list]  # Format each link
+    return ' '.join(markdown_links)  # Join with a space for Markdown formatting
+
+df['try_it_out_links'] = df['try_it_out_links'].apply(format_multiple_links)
 df['project_url'] = df['project_url'].apply(lambda x: f"[Link]({x})")
 
 # Convert the updated DataFrame to a Markdown table
