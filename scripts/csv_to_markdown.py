@@ -1,15 +1,31 @@
 import pandas as pd
 
 # Load the uploaded CSV file
-file_path = 'combined_try_it_out_links.csv'
+file_path = '../combined_try_it_out_links.csv'  # Update the path if needed
 df = pd.read_csv(file_path)
 
-# Convert the DataFrame to a Markdown table
+# Rename the columns to match the desired names for consistency
+df.rename(columns={
+    'Project Name': 'project_name',
+    'Short Description': 'short_description',
+    'Project URL': 'project_url',
+    'Try it Out Links': 'try_it_out_links'
+}, inplace=True)
+
+# Reorder columns as per the desired order
+desired_order = ['project_name', 'try_it_out_links', 'short_description', 'project_url']
+df = df[desired_order]
+
+# Format links in markdown style
+df['try_it_out_links'] = df['try_it_out_links'].apply(lambda x: f"[Link]({x})")
+df['project_url'] = df['project_url'].apply(lambda x: f"[Link]({x})")
+
+# Convert the updated DataFrame to a Markdown table
 markdown_table = df.to_markdown(index=False)
 
 # Save the Markdown table to a file
-markdown_output_path = 'markdown_table_output.md'
+markdown_output_path = '../markdown_table_output.md'  # Output file path
 with open(markdown_output_path, 'w') as f:
     f.write(markdown_table)
 
-markdown_output_path
+print(f"Markdown table saved to: {markdown_output_path}")
